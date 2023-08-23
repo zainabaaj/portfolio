@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion"
 const Header = () => (
-  <header className="w-full">
+  <header className="w-full fixed top-0 shadow-md bg-slate-950 bg-opacity-20">
     <nav className="w-full text-lg flex flex-row justify-end pt-2 md:pr-5 ">
       <motion.div
         className="p-2 cursor-pointer"

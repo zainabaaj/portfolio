@@ -4,15 +4,15 @@ import Header from "./header";
 export default function Page({ children }) {
   const divStyle = {
     backgroundImage: "url('/bg.png')",
-    backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
+    backgroundAttachment: "fixed",
     backgroundPosition: "center",
 
 
   };
   return (
     <>
-      <div style={divStyle} className="min-h-screen w-full  flex flex-col items-center">
+      <div style={divStyle} className="min-h-screen w-full  bg-cover flex flex-col items-center">
         <Header />
 
         <main>{children}</main>
@@ -23,18 +23,11 @@ export default function Page({ children }) {
           padding: 0;
           color: #fff;
          
-            monospace;
-          position: relative;
-          width: 100%;
-          height: 100%;
-          overflow-x: hidden;
+          
            
         }
 
-        #__next {
-          height: 100%;
-          overflow: hidden;
-        }
+      
 
         .page-transition-wrapper {
           height: 100%;
@@ -88,15 +81,7 @@ export default function Page({ children }) {
           font-size: 1rem;
         }
       `}</style>
-        <style jsx>{`
-        html,
-        body {
-          background-image: url('/bg.jpg');
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center;
-        }
-      `}</style>
+
       </div>
 
     </>
