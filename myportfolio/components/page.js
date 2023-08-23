@@ -22,7 +22,7 @@ export default function Page({ children }) {
           margin: 0;
           padding: 0;
           color: #fff;
-          font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo,
+         
             monospace;
           position: relative;
           width: 100%;
@@ -82,13 +82,7 @@ export default function Page({ children }) {
           word-wrap: break-word;
         }
 
-        h1 {
-          font-size: 10vmin;
-        }
-
-        h2 {
-          font-size: 8vmin;
-        }
+       
 
         p {
           font-size: 1rem;

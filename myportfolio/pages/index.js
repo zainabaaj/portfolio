@@ -18,7 +18,18 @@ export default function Home() {
   return (
     <Page >
 
-      <div >
+      <motion.div className=" flex flex-col m-auto md:p-12 "
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 2, ease: "easeInOut" }}
+      >
+        <h2 className="text-xl md:pt-12 pb-4">
+          Crafting Digital Experiences, Building Connections:
+        </h2>
+        <h2 className="text-xl ">
+          Where Code Meets Creativity and Business
+        </h2>
         <motion.h1
 
           animate={{
@@ -31,11 +42,12 @@ export default function Home() {
           transition={{
             color: { duration: 6, repeat: Infinity },
           }}
+          className="text-5xl py-4"
         >
           Zeyna Baaj
         </motion.h1>
         <DownloadPdfButton />
-      </div>
+      </motion.div>
 
       <style jsx>{``}</style>
     </Page>

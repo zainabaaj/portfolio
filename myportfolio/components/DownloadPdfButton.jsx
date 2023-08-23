@@ -2,19 +2,18 @@ import React from "react";
 import { motion } from "framer-motion";
 function DownloadPdfButton() {
   const handleDownload = () => {
-    // Create a link element
-    const link = document.createElement("a");
-    link.href = "/CV_ZeynaBaaj.pdf"; // Use a relative path from the public directory
-    link.download = "my-pdf-file.pdf"; // Define the downloaded file name
 
-    // Trigger a click event to start the download
+    const link = document.createElement("a");
+    link.href = "/CV_ZeynaBaaj.pdf";
+    link.download = "Zeyna Baaj.pdf";
+
     link.click();
   };
 
   return (
     <div>
       <motion.button
-        className=" rounded-md p-4 border-2 "
+        className=" border-2 border-white hover:border-green-300 border-opacity-70 rounded-lg p-4 "
         whileHover={{ scale: 1.1 }}
         animate={{
           color: [
@@ -27,7 +26,7 @@ function DownloadPdfButton() {
         transition={{
           color: { duration: 1, repeat: 1 },
         }}
-        onClick={handleDownload}>Download PDF</motion.button>
+        onClick={handleDownload}>Download CV</motion.button>
     </div>
   );
 }
