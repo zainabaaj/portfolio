@@ -1,6 +1,7 @@
 import React from "react";
 import Page from "../components/page";
 import { motion } from "framer-motion";
+import DownloadPdfButton from "@/components/DownloadPdfButton";
 
 export default function Home() {
   const config = {
@@ -24,7 +25,7 @@ export default function Home() {
             color: [
               "#4BFFA5",
               "#FFFFFF",
-
+              "#4BFFA5",
             ],
           }}
           transition={{
@@ -33,6 +34,7 @@ export default function Home() {
         >
           Zeyna Baaj
         </motion.h1>
+        <DownloadPdfButton />
       </div>
 
       <style jsx>{``}</style>
