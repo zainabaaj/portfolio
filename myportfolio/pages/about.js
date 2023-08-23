@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import Page from "../page";
+import Page from "../components/page";
 import { motion } from "framer-motion";
 export default function About() {
   const constraintsRef = useRef(null);
