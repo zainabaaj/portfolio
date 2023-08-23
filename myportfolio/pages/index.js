@@ -16,6 +16,7 @@ export default function Home() {
   };
   return (
     <Page >
+
       <div >
         <motion.h1
 

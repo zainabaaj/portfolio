@@ -7,16 +7,14 @@ export default function Page({ children }) {
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center", /* Horizontally center content */
-    minHeight: "100vh", /* Minimum height of 100% of the viewport height */
+
 
   };
   return (
     <>
-      <div style={divStyle} className="min-h-screen  flex flex-col justify-center items-center">
+      <div style={divStyle} className="min-h-screen w-full  flex flex-col items-center">
         <Header />
+
         <main>{children}</main>
         <style jsx global>{`
         html,

@@ -1,46 +1,46 @@
 import Link from "next/link";
-
+import { motion } from "framer-motion"
 const Header = () => (
-  <header>
-    <nav>
-      <Link href="/">
+  <header className="w-full">
+    <nav className="w-full text-lg flex flex-row justify-end pt-2 md:pr-5 ">
+      <motion.div
+        className="p-2 cursor-pointer"
+        href="/"
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+      >
         Home
-      </Link>
-      <Link href="/about">
-        About
-      </Link>
+      </motion.div>
+      <motion.div
+        className="p-2 cursor-pointer"
+        href="/"
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+      >
+        Resume
+      </motion.div>
+      <motion.div
+        className="p-2 cursor-pointer"
+        href="/"
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+      >
+        Portfolio
+      </motion.div>
+      <motion.div
+        className="p-2 cursor-pointer"
+        href="/about"
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+      >
+        Contact
+      </motion.div>
     </nav>
 
-    <style jsx>
-      {`
-        header {
-          position: relative;
-          display: flex;
-          align-items: center;
-          padding: 0;
-          height: 4rem;
-          min-width: 100%;
-        }
 
-        nav {
-          flex: 1;
-          place-content: center;
-          display: flex;
-          font-size: 2rem;
-          z-index: 10;
-        }
-
-        nav a {
-          padding: 0 3rem;
-        }
-
-        a {
-          color: #fff;
-          text-transform: uppercase;
-        }
-      `}
-    </style>
   </header>
+
+
 );
 
 export default Header;
