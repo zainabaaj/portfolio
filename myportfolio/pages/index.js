@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Page from "../components/page";
 import Intro from "@/components/Intro";
 import Resume from "@/components/Resume";
@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <Page >
       {/* <BackgroundImage /> */}
-      <Intro />
-      <Resume />
+      <Intro id="intro" />
+      <Resume id="resume" />
 
 
     </Page>

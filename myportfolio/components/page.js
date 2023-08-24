@@ -23,7 +23,7 @@ export default function Page({ children }) {
           padding: 0;
           color: #fff;
          background-color:#000000
-          
+         scroll-behavior: smooth;
            
         }
 

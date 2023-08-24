@@ -5,19 +5,23 @@ const Header = () => (
     <nav className="w-full text-lg flex flex-row justify-end pt-2 md:pr-5 ">
       <motion.div
         className="p-2 cursor-pointer"
-        href="/"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
-        Home
+        <a href="#intro">
+          Home
+
+        </a>
       </motion.div>
       <motion.div
         className="p-2 cursor-pointer"
-        href="#resume"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
-        Resume
+        <a href="#resume">
+          Resume
+
+        </a>
       </motion.div>
       <motion.div
         className="p-2 cursor-pointer"

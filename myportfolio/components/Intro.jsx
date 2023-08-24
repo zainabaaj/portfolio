@@ -26,6 +26,7 @@ const Intro = () => {
     return (
 
         <div
+            id="intro"
             className="w-full min-h-screen flex bg-gradient-to-b from-transparent from-40% to-black  flex-col m-auto md:p-12"
             style={{
                 backgroundColor: `rgba(0, 0, 0, ${bgOpacity})`,
