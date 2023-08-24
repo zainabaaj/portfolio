@@ -22,7 +22,7 @@ export default function Page({ children }) {
           margin: 0;
           padding: 0;
           color: #fff;
-         
+         background-color:#000000
           
            
         }
