@@ -8,9 +8,12 @@ const Portfolio = () => {
             id='portfolio'
             className='flex flex-col bg-black p-12 text-justify' >
             <h1 className='text-6xl font-extrabold text-green-400 p-4'>Projects </h1>
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
+            <div className="flex flex-row">
+                <ProjectCard />
+                <ProjectCard />
+                <ProjectCard />
+            </div>
+
 
 
 
