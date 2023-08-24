@@ -6,7 +6,7 @@ const Intro = () => {
     useEffect(() => {
         const handleScroll = () => {
             // Calculate the opacity based on the scroll position
-            const opacity = window.scrollY / 600; // You can adjust this value
+            const opacity = window.scrollY / 500; // You can adjust this value
 
             // Limit opacity to a maximum of 1
             const limitedOpacity = Math.min(opacity, 1);
@@ -26,42 +26,70 @@ const Intro = () => {
     return (
 
         <div
-            className="w-full min-h-screen flex flex-col m-auto md:p-12"
+            className="w-full min-h-screen flex bg-gradient-to-b from-transparent from-40% to-black  flex-col m-auto md:p-12"
             style={{
                 backgroundColor: `rgba(0, 0, 0, ${bgOpacity})`,
                 // Add other styles for your Intro component
             }}
         >
-            <motion.div className=" flex flex-col m-auto md:p-12 "
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 2, ease: "easeInOut" }}
-            >
-                <h2 className="text-xl md:pt-12 pb-4">
-                    Crafting Digital Experiences, Building Connections:
-                </h2>
-                <h2 className="text-xl ">
-                    Where Code Meets Creativity and Business
-                </h2>
-                <motion.h1
+            <div className=" flex flex-col m-auto md:p-12 "
 
-                    animate={{
-                        color: [
-                            "#4BFFA5",
-                            "#FFFFFF",
-                            "#4BFFA5",
-                        ],
-                    }}
+            >
+                <motion.h2
+                    className="text-xl md:pt-12 pb-4"
+                    initial={{ x: "-40%", opacity: 0 }}
+                    animate={{ x: "0%", opacity: 1 }}
                     transition={{
-                        color: { duration: 6, repeat: Infinity },
+                        duration: 0.7,
+                        delay: 0.35,
+                        ease: "easeInOut",
                     }}
-                    className="text-5xl py-4"
                 >
-                    Zeyna Baaj
-                </motion.h1>
+
+                    Crafting Digital Experiences, Building Connections:
+
+                </motion.h2>
+                <motion.h2
+                    className="text-xl  pb-4"
+                    initial={{ x: "-40%", opacity: 0 }}
+                    animate={{ x: "0%", opacity: 1 }}
+                    transition={{
+                        duration: 0.7,
+                        delay: 0.35,
+                        ease: "easeInOut",
+                    }}
+                >
+
+                    Where Code Meets Creativity and Business
+
+
+                </motion.h2>
+
+                <motion.div className=" "
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 2, ease: "easeInOut" }}
+                >
+                    <motion.h1
+
+                        animate={{
+                            color: [
+                                "#4BFFA5",
+                                "#FFFFFF",
+                                "#4BFFA5",
+                            ],
+                        }}
+                        transition={{
+                            color: { duration: 6, repeat: Infinity },
+                        }}
+                        className="text-6xl py-6 font-bold"
+                    >
+                        Zeyna Baaj
+                    </motion.h1>
+                </motion.div>
                 <DownloadPdfButton />
-            </motion.div>
+            </div>
         </div >
 
     )

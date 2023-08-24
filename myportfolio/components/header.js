@@ -13,7 +13,7 @@ const Header = () => (
       </motion.div>
       <motion.div
         className="p-2 cursor-pointer"
-        href="/"
+        href="#resume"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
