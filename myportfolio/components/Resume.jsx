@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import DownloadPdfButton from './DownloadPdfButton'
 
 const Resume = () => {
     return (
@@ -9,12 +10,17 @@ const Resume = () => {
             className='flex flex-col bg-black p-12 text-justify' >
             <h1 className='text-6xl font-extrabold text-green-400 p-4'>About </h1>
             <div className='flex flex-col md:flex-row h-full md:p-6'>
-                <div>
+                <div className='flex flex-col items-center'>
                     <Image src='/zeynapp.png'
                         alt="zeyna profile picture"
                         width={400}
                         height={700}
+
                     />
+                    <div className="py-6">
+                        <DownloadPdfButton />
+
+                    </div>
                 </div>
                 <div className="bg-white mx-2 p-1"></div>
                 <div>
