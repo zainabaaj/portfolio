@@ -21,5 +21,36 @@ border-radius: 2rem;
   }
   .carousel{
     cursor: grab;
-    
+
   }
+
+  .prev {
+    background: white;
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 10px;
+    transform: scale(-1);
+  }
+  
+  .next {
+    background: white;
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
