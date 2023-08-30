@@ -4,3 +4,22 @@
 html {
     scroll-behavior: smooth;
   }
+
+  .item{
+    max-height:4rem;
+    width:15rem;
+    padding :40px;
+  }
+  .item img{
+width:100%;
+height:100%;
+border-radius: 2rem;
+  }
+  .inner-carousel{
+    display: flex;
+    background-color: lightblue;
+  }
+  .carousel{
+    cursor: grab;
+    
+  }
