@@ -19,8 +19,9 @@ const Portfolio = () => {
                 <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className=' flex flex-row min-w-30 '>
                     {images.map((image) => {
                         return (
-                            <motion.div className=' rounded-sm p-8 w-80 h-64 pointer-events-none'     >
-                                <Image src={image} alt="" width={1080} height={700} className='w-full h-full rounded-md ' />
+                            <motion.div className=' rounded-sm p-8 w-80 h-64 pointer-events-none' key={image.key}     >
+                                <Image src={image.image} alt="" width={1080} height={700} className='w-full h-full rounded-md ' />
+                                <p className='flex flex-wrap text-sm'>{image.name}</p>
                             </motion.div>
                         )
                     })}
