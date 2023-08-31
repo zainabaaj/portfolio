@@ -20,7 +20,7 @@ const ProjectCard = ({ project }) => {
 
     return (
         <div className={`flex flex-col w-full md:flex-row md:p-8 text-slate-200 `}>
-            <div className='p-2 pt-10 w-full h-96  rounded-xl'>
+            <div className='p-6 pt-10 w-full h-96  rounded-xl'>
                 <motion.img
                     key={project.key}
                     src={project.images[index].src}
