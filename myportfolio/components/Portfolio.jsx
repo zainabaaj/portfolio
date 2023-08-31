@@ -18,6 +18,7 @@ const Portfolio = () => {
     const controls = useAnimation();
     useEffect(() => {
         setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+        setSelectedProject(null)
     }, []);
 
     const nextSlide = () => {

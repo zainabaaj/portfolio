@@ -12,10 +12,10 @@ const ProjectCard = ({ project }) => {
     useEffect(() => {
         const interval = setInterval(() => {
             setIndex((prevIndex) => (prevIndex + 1) % project.images.length);
-        }, 5000); // Change image every 3 seconds
+        }, 5000);
 
         return () => clearInterval(interval);
-    }, []);
+    },);
 
     return (
         <div className={`flex flex-col md:flex-row pt-8 text-slate-200 rounded-lg`}>
