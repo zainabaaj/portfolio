@@ -18,8 +18,8 @@ const ProjectCard = ({ project }) => {
     }, []);
 
     return (
-        <div className="flex flex-col md:flex-row p-4 md:pl-6">
-            <div className='p-2 w-full h-64 '>
+        <div className={`flex flex-col md:flex-row pt-8 text-slate-200 rounded-lg`}>
+            <div className='p-2 pt-10 w-full h-80  '>
                 <motion.img
                     key={project.key}
                     src={project.images[index].src}
@@ -29,12 +29,12 @@ const ProjectCard = ({ project }) => {
                     initial="initial"
                     animate="animate"
                     transition={{ duration: 5, delay: 0.7, ease: "easeInOut" }}
-                    className='rounded-md w-full h-full'
+                    className='rounded-md w-full h-full  shadow-lg'
                 />
             </div>
-            <div className='flex flex-col p-4 '>
-                <p className='text-green-400 '>{project.name}</p>
-                <div className='leading-relaxed' dangerouslySetInnerHTML={{ __html: project.description }} />
+            <div className='flex flex-col md:px-4 text-sm md:text-md bg-gray-800 bg-opacity-50 md:mr-8 rounded-xl'>
+                <p className='text-green-400 py-2 font-bold text-lg'>{project.name}</p>
+                <div className='md:leading-relaxed' dangerouslySetInnerHTML={{ __html: project.description }} />
             </div>
 
 
