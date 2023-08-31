@@ -46,7 +46,7 @@ const Portfolio = () => {
         <div>
             <div
                 id='portfolio'
-                className='flex flex-col bg-gradient-to-b from-[#333437] to-[#aaafb6] p-12 text-justify shadow-xl'  >
+                className='flex flex-col  p-12 text-justify '  >
                 <h1 className='text-6xl font-extrabold text-green-400 p-4'>Projects </h1>
                 <div className="flex flex-row items-center">
                     {/* <svg xmlns="http://www.w3.org/2000/svg" onClick={prevSlide} height="28" viewBox="0 -960 960 960" fill='#FFFFFF' width="28"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg> */}
@@ -85,12 +85,16 @@ const Portfolio = () => {
 
             </div>
             {selectedProject && (
-                <div style={projdetatil}>
-                    <ProjectCard
-                        project={selectedProject}
-                        onClose={resetSelectedProject}
-                    />
+
+                <div className="p-8">
+                    <div style={projdetatil} className='shadow-xl'>
+                        <ProjectCard
+                            project={selectedProject}
+                            onClose={resetSelectedProject}
+                        />
+                    </div>
                 </div>
+
             )}
         </div>
 
