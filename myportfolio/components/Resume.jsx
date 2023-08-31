@@ -7,7 +7,7 @@ const Resume = () => {
     return (
         <div
             id='resume'
-            className='flex flex-col bg-black p-12 text-justify' >
+            className='flex flex-col bg-gradient-to-b from-black to-[#333437] p-12 text-justify' >
             <h1 className='text-6xl font-extrabold text-green-400 p-4'>About </h1>
             <div className='flex flex-col md:flex-row h-full md:p-6'>
                 <div className='flex flex-col items-center'>
