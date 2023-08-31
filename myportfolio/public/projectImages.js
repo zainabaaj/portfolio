@@ -43,9 +43,7 @@ export default [
         <p><strong>C# Integration:</strong></p>
         <p>The demo is built entirely on C#, leveraging its versatility for robust and efficient applications. C# integration ensures smooth functionality and pattern implementation.</p>
         
-        <p><strong>Conclusion:</strong></p>
-        <p>In a nutshell, the Airlines System Demo merges database-like management, seamless CRUD operations, and design patterns seamlessly in C#. This demonstration offers insights into creating organized, scalable, and functional systems, showcasing the prowess of modern programming techniques.</p>
-    `
+           `
     },
     { key: 2, name: "Course Worm Learning App nextjs", image: image2 },
     { key: 3, name: "Portfolio with django", image: image3 },
