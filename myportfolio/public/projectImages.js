@@ -46,33 +46,19 @@ export default [
         images: [image1, image1_1, image1_2, image1_3, image1_4],
         link: "",
         github: "https://github.com/zainabaaj/airline-db-system-with-design-patterns",
-        description: `<p><strong>Introduction:</strong></p>
-        <p>Discover a cutting-edge Airlines System Demo that seamlessly combines database-like functionality with essential design patterns in C#. This demo showcases a system for adding, deleting, and updating airline information while employing key design patterns for enhanced code organization and flexibility.</p>
-        
-        <p><strong>Airlines System Demo Highlights:</strong></p>
-        <p>The Airlines System Demo offers a comprehensive solution for efficiently managing airline data. It covers adding new routes, removing outdated ones, updating critical details, and establishing relationships between various classes.</p>
-        
-        <p><strong>Database-Like Efficiency:</strong></p>
-        <p>At its core, the demo mimics a database's efficiency in handling and retrieving airline-specific information. This ensures data accuracy and accessibility.</p>
-        
-        <p><strong>Effortless CRUD Operations:</strong></p>
-        <p>The system streamlines Create, Read, Update, and Delete (CRUD) operations. This means seamless addition, reading, updating, and removal of data, maintaining data accuracy.</p>
-        
-        <p><strong>Class Interlinking:</strong></p>
-        <p>A standout feature is its ability to establish connections between different classes, representing complex relationships within the airline ecosystem.</p>
-        
-        <p><strong>Design Patterns Advantage:</strong></p>
-        <p>The demo showcases the power of design patterns, including Strategy, Factory, Singleton, and Command. These patterns optimize code structure and adaptability.</p>
-        <ul>
-            <li><strong>Strategy Pattern:</strong> Dynamically adjusts system behavior based on different strategies, ideal for managing diverse scenarios like pricing strategies.</li>
-            <li><strong>Factory Pattern:</strong> Simplifies object creation, aiding in creating structured airline objects and related components.</li>
-            <li><strong>Singleton Pattern:</strong> Ensures single instance classes with global accessibility, useful for centralized control.</li>
-            <li><strong>Command Pattern:</strong> Converts operations into objects, allowing flexible and delayed execution.</li>
+        description: `<div class="">
+        <h1 class="text-2xl text-gray-900 font-bold">Project Overview:</h1>
+        <p>Discover an Airlines System Demo in C# that combines database-like efficiency with key design patterns. This demo facilitates airline data management through streamlined CRUD operations and class interlinking. It harnesses the power of design patterns including Strategy, Factory, Singleton, and Command for enhanced code structure and adaptability.</p>
+
+        <h2 class="text-xl text-gray-900 font-bold mt-4">Key Features:</h2>
+        <ul class="list-disc pl-6">
+            <li><strong>Efficiency:</strong> The demo mimics a database's efficiency for handling airline data, ensuring accuracy and accessibility.</li>
+            <li><strong>CRUD Operations:</strong> Seamlessly perform Create, Read, Update, and Delete operations for maintaining data accuracy.</li>
+            <li><strong>Class Interlinking:</strong> Establish complex relationships between different classes in the airline ecosystem.</li>
+            <li><strong>Design Patterns:</strong> Utilize Strategy, Factory, Singleton, and Command patterns to optimize code structure and adaptability.</li>
+            <li><strong>C# Integration:</strong> Built entirely on C# for robust and efficient application development.</li>
         </ul>
-        
-        <p><strong>C# Integration:</strong></p>
-        <p>The demo is built entirely on C#, leveraging its versatility for robust and efficient applications. C# integration ensures smooth functionality and pattern implementation.</p>
-        
+    </div>
            `
     },
     {

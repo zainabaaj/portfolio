@@ -14,8 +14,15 @@ export default function Home() {
     <Page >
       {/* <BackgroundImage /> */}
       <Intro id="intro" />
-      <Resume id="resume" />
-      <Portfolio id="portfolio" />
+
+      <div style={{
+        backgroundImage: "url('/projpg3.jpg')", backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}>
+        <Resume id="resume" />
+        <Portfolio id="portfolio" />
+      </div>
+
 
     </Page>
   );
