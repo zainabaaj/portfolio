@@ -1,9 +1,10 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+import { motion, useScroll } from 'framer-motion'
 import Image from 'next/image'
 import DownloadPdfButton from './DownloadPdfButton'
-
+import ProgressBar from './ProgressBar'
 const Resume = () => {
+    const { scrollYProgress } = useScroll()
     return (
         <div
             id='resume'
@@ -97,6 +98,97 @@ const Resume = () => {
 
 
 
+            </div>
+            <div className='flex flex-col'>
+                <h2 className='text text-green-400 text-lg'> Skills</h2>
+                <div className='flex flex-row justify-between'>
+
+
+                    <motion.a whileHover={{ scale: 1.5 }} href="https://aws.amazon.com" rel="nofollow" >
+                        <Image src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width={40} height={40} />
+                    </motion.a>
+                    <motion.a whileHover={{ scale: 1.5 }} href="https://azure.microsoft.com/en-in/" rel="nofollow">
+                        <Image src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width={40} height={40} />
+                    </motion.a >
+                    <motion.a whileHover={{ scale: 1.5 }} href="https://www.w3schools.com/cs/" rel="nofollow">
+                        <Image src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width={40} height={40} />
+                    </motion.a >
+                    <motion.a whileHover={{ scale: 1.5 }} href="https://www.w3schools.com/css/" rel="nofollow">
+                        <Image src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width={40} height={40} />
+                    </motion.a >
+                    <motion.a whileHover={{ scale: 1.5 }} href="https://www.djangoproject.com/" rel="nofollow">
+                        <Image src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width={40} height={40} />
+                    </motion.a >
+                    <motion.a whileHover={{ scale: 1.5 }} href="https://www.docker.com/" rel="nofollow">
+                        <Image src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width={40} height={40} />
+                    </motion.a >
+                    <motion.a whileHover={{ scale: 1.5 }} href="https://firebase.google.com/" rel="nofollow">
+                        <Image src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width={40} height={40} />
+                    </motion.a >
+                    <motion.a whileHover={{ scale: 1.5 }} href="https://cloud.google.com" rel="nofollow">
+                        <Image src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width={40} height={40} />
+                    </motion.a >
+                    <motion.a whileHover={{ scale: 1.5 }} href="https://heroku.com" rel="nofollow">
+                        <Image src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width={40} height={40} />
+                    </motion.a >
+                    <motion.a whileHover={{ scale: 1.5 }} href="https://www.w3.org/html/" rel="nofollow">
+                        <Image src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width={40} height={40} />
+                    </motion.a >
+                    <motion.a whileHover={{ scale: 1.5 }} href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" rel="nofollow">
+                        <Image src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width={40} height={40} />
+                    </motion.a >
+                    <motion.a whileHover={{ scale: 1.5 }} href="https://jestjs.io" rel="nofollow">
+                        <Image src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg" alt="jest" width={40} height={40} />
+                    </motion.a >
+                    <motion.a whileHover={{ scale: 1.5 }} href="https://www.microsoft.com/en-us/sql-server" rel="nofollow">
+                        <Image src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width={40} height={40} />
+                    </motion.a >
+                    <motion.a whileHover={{ scale: 1.5 }} href="https://nextjs.org/" rel="nofollow">
+                        <Image src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs" width={40} height={40} />
+                    </motion.a >
+                    <motion.a whileHover={{ scale: 1.5 }} href="https://postman.com" rel="nofollow">
+                        <Image src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width={40} height={40} />
+                    </motion.a >
+                    <motion.a whileHover={{ scale: 1.5 }} href="https://www.python.org" rel="nofollow">
+                        <Image src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width={40} height={40} />
+                    </motion.a >
+                    <motion.a whileHover={{ scale: 1.5 }} href="https://reactjs.org/" rel="nofollow">
+                        <Image src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width={40} height={40} />
+                    </motion.a >
+                    <motion.a whileHover={{ scale: 1.5 }} href="https://redux.js.org" rel="nofollow">
+                        <Image src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width={40} height={40} />
+                    </motion.a >
+                    <motion.a whileHover={{ scale: 1.5 }} href="https://tailwindcss.com/" rel="nofollow">
+                        <Image src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width={40} height={40} />
+                    </motion.a >
+                    <motion.a whileHover={{ scale: 1.5 }} href="https://www.tensorflow.org" rel="nofollow">
+                        <Image src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width={40} height={40} />
+                    </motion.a >
+
+
+                </div>
+                <h2 className='text text-green-400 text-lg'> Languages</h2>
+                <div className="flex flex-row items-center">
+                    <p className='m-2'>Arabic</p>
+                    <ProgressBar percentage={100} />
+                </div>
+                <div className="flex flex-row items-center">
+                    <p className='m-2'>English</p>
+                    <ProgressBar percentage={85} />
+                </div>
+                <div className="flex flex-row items-center">
+                    <p className='m-2'>Turkish</p>
+                    <ProgressBar percentage={75} />
+                </div>
+
+                <div className="flex flex-row items-center">
+                    <p className='m-2'>French</p>
+                    <ProgressBar percentage={35} />
+                </div>
+                <div className="flex flex-row items-center">
+                    <p className='m-2'>German</p>
+                    <ProgressBar percentage={25} />
+                </div>
             </div>
         </div>
     )

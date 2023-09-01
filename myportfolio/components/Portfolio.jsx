@@ -59,11 +59,11 @@ const Portfolio = () => {
                             className=' flex flex-row min-w-30 '>
                             {images.map((image) => {
                                 return (
-                                    <div className="flex flex-col">
+                                    <div className="flex flex-col "   >
                                         <motion.div className=' rounded-sm p-8 w-80 h-64 pointer-events-none' key={image.key}     >
                                             <Image src={image.image} alt="" width={1080} height={700} className='w-full h-full rounded-md ' />
                                         </motion.div>
-                                        <p onClick={() => handleClick(image)} className='flex pb-2  flex-wrap justify-center text-sm'>{image.name}</p>
+                                        <motion.p whileHover={{ scale: 1.1 }} onClick={() => handleClick(image)} className='flex pb-2  flex-wrap justify-center text-sm cursor-pointer'><a href="#projectDetail">{image.name}</a></motion.p>
 
                                     </div>
 
@@ -86,7 +86,7 @@ const Portfolio = () => {
             </div>
             {selectedProject && (
 
-                <div className="p-8">
+                <div id='projectDetail' className="p-8">
                     <div style={projdetatil} className='shadow-xl'>
                         <ProjectCard
                             project={selectedProject}
