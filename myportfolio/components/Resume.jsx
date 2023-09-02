@@ -168,27 +168,30 @@ const Resume = () => {
 
                 </div>
                 <h2 className='text text-green-400 text-lg'> Languages</h2>
-                <div className="flex flex-row items-center">
-                    <p className='m-2'>Arabic</p>
-                    <ProgressBar percentage={100} />
-                </div>
-                <div className="flex flex-row items-center">
-                    <p className='m-2'>English</p>
-                    <ProgressBar percentage={85} />
-                </div>
-                <div className="flex flex-row items-center">
-                    <p className='m-2'>Turkish</p>
-                    <ProgressBar percentage={75} />
+                <div className="flex flex-col md:flex-row flex-wrap">
+                    <div className="flex flex-row items-center">
+                        <p className='m-2'>Arabic</p>
+                        <ProgressBar percentage={100} />
+                    </div>
+                    <div className="flex flex-row items-center">
+                        <p className='m-2'>English</p>
+                        <ProgressBar percentage={85} />
+                    </div>
+                    <div className="flex flex-row items-center">
+                        <p className='m-2'>Turkish</p>
+                        <ProgressBar percentage={75} />
+                    </div>
+
+                    <div className="flex flex-row items-center">
+                        <p className='m-2'>French</p>
+                        <ProgressBar percentage={35} />
+                    </div>
+                    <div className="flex flex-row items-center">
+                        <p className='m-2'>German</p>
+                        <ProgressBar percentage={25} />
+                    </div>
                 </div>
 
-                <div className="flex flex-row items-center">
-                    <p className='m-2'>French</p>
-                    <ProgressBar percentage={35} />
-                </div>
-                <div className="flex flex-row items-center">
-                    <p className='m-2'>German</p>
-                    <ProgressBar percentage={25} />
-                </div>
             </div>
         </div>
     )
