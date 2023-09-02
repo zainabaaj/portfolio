@@ -25,19 +25,25 @@ const Header = () => (
       </motion.div>
       <motion.div
         className="p-2 cursor-pointer"
-        href="/"
+
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
-        Portfolio
+        <a href="#portfolio">
+          Portfolio
+
+        </a>
       </motion.div>
       <motion.div
         className="p-2 cursor-pointer"
-        href="/about"
+
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
-        Contact
+        <a href="#contact">
+          Contact
+
+        </a>
       </motion.div>
     </nav>
 
