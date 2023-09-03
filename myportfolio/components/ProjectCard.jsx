@@ -33,7 +33,7 @@ const ProjectCard = ({ project }) => {
                     className='rounded-md w-full h-full  shadow-lg'
                 />
             </div>
-            <div className='flex flex-col w-full md:px-4 text-sm md:text-md bg-gray-800 bg-opacity-50 md:mr-8 rounded-xl'>
+            <div className='flex flex-col w-full px-2 md:px-4 text-sm md:text-md bg-gray-800 bg-opacity-50 md:mr-8 rounded-xl'>
                 <p className='text-green-400 py-2 font-bold text-lg'>{project.name}</p>
                 <div className='md:leading-relaxed' dangerouslySetInnerHTML={{ __html: project.description }} />
                 <div className="flex flex-row items-center justify-center py-4">

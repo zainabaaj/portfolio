@@ -33,7 +33,7 @@ const Intro = () => {
                 // Add other styles for your Intro component
             }}
         >
-            <div className=" flex flex-col m-auto md:p-12 "
+            <div className=" flex flex-col m-auto p-6 md:p-12 "
 
             >
                 <motion.h2
