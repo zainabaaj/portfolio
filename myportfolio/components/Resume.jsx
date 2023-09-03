@@ -9,7 +9,7 @@ const Resume = () => {
         <div
             id='resume'
 
-            className='flex flex-col  p-12 text-justify' >
+            className='flex flex-col p-2 md:p-12 text-justify' >
             <h1 className='text-6xl font-extrabold text-green-400 p-4'>About </h1>
             <div className='flex flex-col md:flex-row h-full md:p-6'>
                 <div className='flex flex-col items-center'>
@@ -17,6 +17,7 @@ const Resume = () => {
                         alt="zeyna profile picture"
                         width={400}
                         height={700}
+                        className='p-6 md:p-0'
 
                     />
                     <div className="py-6">
@@ -28,7 +29,7 @@ const Resume = () => {
                 <div>
 
 
-                    <div className="relative">
+                    <div className="p-2">
 
                         <h2 className="text-gray-900 text-2xl font-semibold mb-4">Greetings, I am Zeyna Baaj</h2>
                         <p className="text-gray-200 mb-4 leading-relaxed">
