@@ -37,36 +37,41 @@ const ProjectCard = ({ project }) => {
                 <p className='text-green-400 py-2 font-bold text-lg'>{project.name}</p>
                 <div className='md:leading-relaxed' dangerouslySetInnerHTML={{ __html: project.description }} />
                 <div className="flex flex-row items-center justify-center py-4">
-                    <motion.a
-                        className=" border-2 border-white m-2 hover:border-green-300 border-opacity-70 rounded-lg p-4 "
-                        whileHover={{ scale: 1.1 }}
-                        animate={{
-                            color: [
-                                "#4BFFA5",
-                                "#FFFFFF",
-                                "#4BFFA5",
+                    {project.link && (
+                        <motion.a
+                            className=" border-2 border-white m-2 hover:border-green-300 border-opacity-70 rounded-lg p-4 "
+                            whileHover={{ scale: 1.1 }}
+                            animate={{
+                                color: [
+                                    "#4BFFA5",
+                                    "#FFFFFF",
+                                    "#4BFFA5",
 
-                            ],
-                        }}
-                        transition={{
-                            color: { duration: 1, repeat: 1 },
-                        }}
-                        href={project.link} target="_blank">Go to Website</motion.a>
-                    <motion.a
-                        className=" border-2 border-white m-2 hover:border-green-300 border-opacity-70 rounded-lg p-4 "
-                        whileHover={{ scale: 1.1 }}
-                        animate={{
-                            color: [
-                                "#4BFFA5",
-                                "#FFFFFF",
-                                "#4BFFA5",
+                                ],
+                            }}
+                            transition={{
+                                color: { duration: 1, repeat: 1 },
+                            }}
+                            href={project.link} target="_blank">Go to Website</motion.a>
+                    )}
+                    {project.github && (
+                        <motion.a
+                            className=" border-2 border-white m-2 hover:border-green-300 border-opacity-70 rounded-lg p-4 "
+                            whileHover={{ scale: 1.1 }}
+                            animate={{
+                                color: [
+                                    "#4BFFA5",
+                                    "#FFFFFF",
+                                    "#4BFFA5",
 
-                            ],
-                        }}
-                        transition={{
-                            color: { duration: 1, repeat: 1 },
-                        }}
-                        href={project.github} target="_blank">View Code on Github</motion.a>
+                                ],
+                            }}
+                            transition={{
+                                color: { duration: 1, repeat: 1 },
+                            }}
+                            href={project.github} target="_blank">View Code on Github</motion.a>
+                    )}
+
                 </div>
 
             </div>
