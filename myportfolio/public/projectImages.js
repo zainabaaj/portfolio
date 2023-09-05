@@ -21,7 +21,6 @@ import image3_2 from './django/jobs.JPG'
 import image4_1 from './drone/1.jpg'
 import image4_2 from './drone/2.jpg'
 import image4_3 from './drone/3.jpg'
-import image4_4 from './drone/4.jpg'
 
 import image5_1 from './landingpage/Access.JPG'
 import image5_2 from './landingpage/desktop-preview.jpg'
@@ -109,7 +108,7 @@ export default [
     },
     {
         key: 4, name: "Drone from scratch", image: image4,
-        images: [image4, image4_1, image4_2, image4_3, image4_4],
+        images: [image4, image4_1, image4_2, image4_3,],
         link: "",
         github: "",
         description: `<div class="">
