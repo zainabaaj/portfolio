@@ -56,7 +56,7 @@ const Footer = () => {
                 />
             </a>
             <a
-                href="https://www.instagram.com/zeynabaaj/"
+                href="https://www.instagram.com/zeyna.baaj/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2"
