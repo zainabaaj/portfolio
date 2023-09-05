@@ -4,50 +4,72 @@ import {
     AiFillYoutube,
     AiFillInstagram,
     AiFillGithub,
+    AiFillMessage,
+    AiFillMail,
+    AiFillPhone,
 } from "react-icons/ai";
 import { motion } from "framer-motion";
 
 const Footer = () => {
     return (
         <motion.div
-            className=" flex flex-row justify-center"
+            className=" flex flex-row justify-center p-2 bg-black bg-opacity-30 bottom-0 fixed w-full items-center "
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.7 }}
         >
-            <div className=" flex flex-row ">
 
-                <a href="mailto:zeynabaaj@gmail.com" className="">
-                    <p >E: zeynabaaj@gmail.com</p>
-                </a>
-                <p>T: +90 (552) 624 43 22</p>
-            </div>
-            <div className="flex flex-row justify-between">
-                <p >Follow Me</p>
-                <div ></div>
-                <a
-                    href="https://www.linkedin.com/in/zeynabaaj/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <AiFillLinkedin
-                        className=""
+            <a href="mailto:zeynabaaj@gmail.com" className="p-2">
+
+                <AiFillMail
+                    className="w-8 h-8 rounded-full" />
+            </a>
+            <a href="tel:+905526244322" className="p-2">
+                <AiFillPhone
+                    className="w-8 h-8"
+                />
+
+            </a>
+
+            <a
+                href="https://www.linkedin.com/in/zeynabaaj/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 "
+            >
+                <AiFillLinkedin
+                    className="w-8 h-8 rounded-full"
 
 
-                    />
-                </a>
+                />
+            </a>
 
-                <a
-                    href="https://github.com/zainabaaj"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <AiFillGithub
-                        className=""
+            <a
+                href="https://github.com/zainabaaj"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2"
+            >
+                <AiFillGithub
+                    className="w-8 h-8"
 
-                    />
-                </a>
-            </div>
+                />
+            </a>
+            <a
+                href="https://www.instagram.com/zeynabaaj/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2"
+            >
+                <AiFillInstagram
+                    className="w-8 h-8"
+
+
+                />
+            </a>
+
+
+
         </motion.div>
     );
 };

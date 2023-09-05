@@ -16,7 +16,7 @@ const ProjectCard = ({ project }) => {
         }, 5000);
 
         return () => clearInterval(interval);
-    },);
+    }, [project]);
 
     return (
         <div className={`flex flex-col w-full md:flex-row md:p-8 text-slate-200 `}>

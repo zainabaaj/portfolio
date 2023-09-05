@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./header";
+import Footer from "./Footer";
 
 export default function Page({ children }) {
   const divStyle = {
@@ -16,6 +17,7 @@ export default function Page({ children }) {
         <Header />
 
         <main>{children}</main>
+        <Footer />
         <style jsx global>{`
         html,
         body {
