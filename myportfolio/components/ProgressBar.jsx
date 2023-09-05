@@ -1,27 +1,37 @@
 import { useEffect, useState } from 'react';
-
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 const ProgressBar = ({ percentage }) => {
     const [progress, setProgress] = useState(0);
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.5,
+    });
+
+
+    const controls = useAnimation();
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            if (progress < percentage) {
-                setProgress(progress + 1);
-            }
-        }, 30);
+        if (inView) {
+            controls.start({
+                width: `${percentage}%`,
+                transition: { duration: 2 }
+            });
+        }
+    }, [controls, inView, percentage]);
 
-        return () => {
-            clearInterval(interval);
-        };
-    }, [progress, percentage]);
 
     return (
-        <div className="relative h-2 w-full md:w-44 rounded-full bg-black bg-opacity-40 ">
-            <div
-                className="absolute h-full rounded-full bg-green-200"
-                style={{ width: `${progress}%` }}
-            ></div>
-        </div>
+        <motion.div
+            className="relative h-2 w-full md:w-44 rounded-full bg-black bg-opacity-40"
+
+        >
+            <motion.div
+                ref={ref}
+                initial={{ width: '0%' }}
+                animate={controls}
+                className="absolute h-full rounded-full bg-green-200"></motion.div>
+        </motion.div>
     );
 };
 
