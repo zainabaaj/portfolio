@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <div className="flex flex-col md:p-8 " id="contact">
             <div className="flex flex-col pb-12 ">
-                <h1 className='text-6xl font-extrabold text-green-400 p-4' >Contact</h1>
+                <h1 className='text-4xl md:text-6xl font-extrabold text-green-400 p-4' >Contact</h1>
                 <div className='flex flex-col'>
                     <form
                         action="https://formsubmit.co/zeynabaaj@gmail.com"
