@@ -102,7 +102,7 @@ const Resume = () => {
             </div>
             <div className='flex flex-col'>
                 <h2 className='text text-gray-900 p-4 font-bold text-xl'> Skills</h2>
-                <div className='flex flex-row flex-wrap p-4 '>
+                <div className='flex flex-row flex-wrap md:p-4 '>
 
 
                     <motion.a whileHover={{ scale: 1.5 }} href="https://aws.amazon.com" rel="nofollow" >
