@@ -10,7 +10,7 @@ const Resume = () => {
             id='resume'
 
             className='flex flex-col p-2 md:p-12 text-justify' >
-            <h1 className='text-6xl font-extrabold text-green-400 p-4'>About </h1>
+            <h1 className='text-4xl md:text-6xl font-extrabold text-green-400 p-4'>About </h1>
             <div className='flex flex-col md:flex-row h-full md:p-6'>
                 <div className='flex flex-col items-center'>
                     <Image src='/zeynapp.png'
@@ -101,7 +101,7 @@ const Resume = () => {
 
             </div>
             <div className='flex flex-col'>
-                <h2 className='text text-green-400 text-lg'> Skills</h2>
+                <h2 className='text text-gray-900 p-4 font-bold text-lg'> Skills</h2>
                 <div className='flex flex-row justify-between'>
 
 
@@ -168,7 +168,7 @@ const Resume = () => {
 
 
                 </div>
-                <h2 className='text text-green-400 text-lg'> Languages</h2>
+                <h2 className='text text-gray-900 font-bold p-4 text-lg'> Languages</h2>
                 <div className="flex flex-col md:flex-row flex-wrap">
                     <div className="flex flex-row items-center">
                         <p className='m-2'>Arabic</p>

@@ -47,7 +47,7 @@ const Portfolio = () => {
             <div
                 id='portfolio'
                 className='flex flex-col  md:p-12 text-justify '  >
-                <h1 className='text-6xl font-extrabold text-green-400 p-4'>Projects </h1>
+                <h1 className='text-4xl md:text-6xl font-extrabold text-green-400 p-4'>Projects </h1>
                 <div className="flex flex-row items-center">
                     {/* <svg xmlns="http://www.w3.org/2000/svg" onClick={prevSlide} height="28" viewBox="0 -960 960 960" fill='#FFFFFF' width="28"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg> */}
                     <div className="prev text-black bg-white p-4" onClick={prevSlide} >
@@ -60,8 +60,8 @@ const Portfolio = () => {
                             {images.map((image) => {
                                 return (
                                     <div className="flex flex-col "   >
-                                        <motion.div className=' rounded-sm p-8 w-80 h-64 pointer-events-none' key={image.key}     >
-                                            <Image src={image.image} alt="" width={1080} height={700} className='w-full h-full rounded-md ' />
+                                        <motion.div className=' rounded-sm p-8 w-80 h-64 ' key={image.key}     >
+                                            <Image onClick={() => handleClick(image)} src={image.image} alt="" width={1080} height={700} className='w-full h-full rounded-md hover:cursor-pointer' />
                                         </motion.div>
                                         <motion.p whileHover={{ scale: 1.1 }} onClick={() => handleClick(image)} className='flex pb-2  flex-wrap justify-center text-sm cursor-pointer'><a href="#projectDetail">{image.name}</a></motion.p>
 
@@ -86,8 +86,8 @@ const Portfolio = () => {
             </div>
             {selectedProject && (
 
-                <div id='projectDetail' className="md:p-8">
-                    <div style={projdetatil} className='shadow-xl'>
+                <div id='projectDetail' className="md:p-8 ">
+                    <div style={projdetatil} className='rounded-lg shadow-xl'>
                         <ProjectCard
                             project={selectedProject}
                             onClose={resetSelectedProject}
