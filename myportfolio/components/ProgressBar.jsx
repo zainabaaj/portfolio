@@ -26,11 +26,30 @@ const ProgressBar = ({ percentage }) => {
             className="relative h-2 w-full md:w-44 rounded-full bg-black bg-opacity-40"
 
         >
+
             <motion.div
                 ref={ref}
                 initial={{ width: '0%' }}
                 animate={controls}
-                className="absolute h-full rounded-full bg-green-200"></motion.div>
+
+                className="absolute h-full rounded-full bg-green-200">
+
+                <motion.div
+                    className="h-full rounded-full"
+                    animate={{
+                        backgroundColor: [
+                            "#4BFFA5",
+                            "#FFFFFF",
+                            "#4BFFA5",
+                        ],
+                    }}
+                    transition={{
+                        duration: 6,
+                        repeat: Infinity,
+                        repeatType: 'reverse', // Reverse the animation after completion
+                    }}
+                ></motion.div>
+            </motion.div>
         </motion.div>
     );
 };
