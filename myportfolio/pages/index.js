@@ -24,7 +24,6 @@ export default function Home() {
         <Resume id="resume" />
         <Portfolio id="portfolio" />
         <Contact id="contact" />
-        <Footer />
 
       </div>
 
