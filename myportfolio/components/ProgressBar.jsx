@@ -46,7 +46,7 @@ const ProgressBar = ({ percentage }) => {
                     transition={{
                         duration: 6,
                         repeat: Infinity,
-                        repeatType: 'reverse', // Reverse the animation after completion
+                        repeatType: 'reverse',
                     }}
                 ></motion.div>
             </motion.div>

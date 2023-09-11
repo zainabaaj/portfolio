@@ -4,7 +4,7 @@ function DownloadPdfButton() {
   const handleDownload = () => {
 
     const link = document.createElement("a");
-    link.href = "/CV_ZeynaBaaj.pdf";
+    link.href = "/CV_Zeyna_Baaj_Tech.pdf";
     link.download = "Zeyna Baaj.pdf";
 
     link.click();
